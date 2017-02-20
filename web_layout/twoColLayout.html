@@ -2,35 +2,27 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>两列布局</title>
+<title>横向两列布局</title>
 <style type="text/css">
-body{
-	padding:0;
-	margin:0;
-}
-.main{
-	width:800px;
-	margin:0 auto;
-}
-.left{
-	width:20%;
-	height:500px;
-	float:left;
-	background:#ccc;
-}
-.right{
-	width:80%;
-	height:500px;
-	float:right;
-	background:#ddd;
+*{padding:0;margin:0;}
+#wrap{background:#00c;margin:0 auto;width:960px;}
+#header{width:100%;background:#ff3300;}
+#main{width:100%;background:#fc0;overflow:hidden;}
+#footer{background:#639;width:100%;}
+.left{width:800px;height:200px;float:left;background:#903;margin-right:20px;}
+.right{width:140px;height:500px;float:left;background:#090;
 }
 </style>
 </head>
 
 <body>
-<div class="main">
-	<div class="left">left</div>
-	<div class="right">right</div>
+<div id="wrap">
+	<div id="header">头部</div>
+    <div id="main">
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+    <div id="footer">版权部分</div>
 </div>
 </body>
 </html>
